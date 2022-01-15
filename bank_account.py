@@ -39,7 +39,7 @@ class BankAccount:
     def print_accounts(cls):
         for account in cls.accounts:
             account.display_account_info()
-            
+
     @staticmethod
     def can_withdraw(balance, amount):
         if (balance - amount) < 0:
