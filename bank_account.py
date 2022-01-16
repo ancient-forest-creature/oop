@@ -18,7 +18,7 @@ class BankAccount:
             self.balance += -abs(amount)
             print(f"Withdrawl successful. Account balance for account ID({self.account_id}) is now {self.balance}")
         else:
-            print(f"Account {self.account_id} has Insufficient Funds for this request!")
+            print(f"Account {self.account_id} has Insufficient Funds for this transaction!")
         return self
     
     def display_account_info(self):
@@ -51,6 +51,6 @@ bankacct1 = BankAccount(.0145, 2500)
 bankacct2 = BankAccount(.0219, 4200)
 
 bankacct1.deposit(3200).deposit(287.33).deposit(66.60).withdraw(999).yield_interest().display_account_info()
-bankacct2.deposit(1700).deposit(29276.22).withdraw(8.99).withdraw(327.55).withdraw(666).withdraw(4487.23).yield_interest().display_account_info()
+bankacct2.deposit(1700).deposit(29276.23).withdraw(8.99).withdraw(327.55).withdraw(666).withdraw(4487.23).yield_interest().display_account_info()
 
 BankAccount.print_accounts()
